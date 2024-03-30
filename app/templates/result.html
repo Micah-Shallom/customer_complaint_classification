@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/result.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Prediction:</h1>
+    <p>{{ prediction }}</p>
+
+    <a href="/">Make a new prediction</a>
+</body>
+</html>
