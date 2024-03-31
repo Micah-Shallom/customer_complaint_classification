@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
     <title>Complaint Prediction</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <h1>Enter your complaint:</h1>
-    <form action="/predict" method="post">
-        <textarea name="complaint" rows="5" cols="50"></textarea><br>
-        <input type="submit" value="Predict">
-    </form>
+    <div class="container">
+
+        <div class="side">
+            <h1>CUSTOMER COMPLAINT</h1>
+            <h3>Enter your complaint:</h1>
+            <form action="/predict" method="post">
+                <textarea name="complaint" rows="5" cols="80"></textarea><br>
+                <a href=""><input type="submit" value="Predict"></a>
+            </form>
+        </div>
+
+        <img class="fylo" src="../static/images/illustration-1.svg" alt="">
+       
+    </div>
+ 
+
+    <footer>
+        <p class="attribution">
+          @2024 Made with love❤️ by Micah Shallom U18CO1034
+        </p>
+      </footer> 
 </body>
 </html>
